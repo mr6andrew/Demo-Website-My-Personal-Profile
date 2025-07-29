@@ -1201,8 +1201,30 @@ section {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 40px;
+        gap: 30px;
         min-height: auto;
+        grid-template-areas: 
+            "profile"
+            "text"
+            "buttons";
+    }
+    
+    .hero-image {
+        grid-area: profile;
+        order: 1;
+    }
+    
+    .hero-text {
+        grid-area: text;
+        order: 2;
+    }
+    
+    .hero-buttons {
+        grid-area: buttons;
+        order: 3;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .hero-title {
@@ -1233,12 +1255,6 @@ section {
         width: 280px;
         height: 280px;
         margin: 0 auto;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
     }
 
     .about-content {
@@ -1307,6 +1323,7 @@ section {
     .profile-card {
         width: 250px;
         height: 250px;
+        margin: 0 auto;
     }
 
     .btn {
