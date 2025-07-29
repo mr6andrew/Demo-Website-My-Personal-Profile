@@ -1,0 +1,16 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive single-page personal website built with HTML, CSS, and JavaScript. Features a clean design with smooth animations, interactive elements, and mobile-friendly layout.",
+  "main": "dither-background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ogl": "^1.0.11",
+    "three": "^0.178.0"
+  }
+}

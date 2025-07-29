@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew L - Creative Professional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/ogl@0.0.79/dist/ogl.js"></script>
+</head>
+<body>
+    <!-- FaultyTerminal Background -->
+    <div id="faulty-terminal" class="faulty-terminal-background"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Andrew L</a>
+            </div>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Card -->
+    <div id="intro-card" class="intro-card">
+        <div class="card-content">
+            <h3 class="card-title">Nice to meet you!</h3>
+            <p class="card-message">This is a demo website. Everything is made up - fake! 💫<br><br><strong>💡 Tip:</strong> Use a computer to see the magical cursor effect!</p>
+            <button class="card-close" onclick="closeIntroCard()">Got it!</button>
+        </div>
+    </div>
+
+    <!-- Cursor Effect Card -->
+    <div id="cursor-effect-card" class="cursor-effect-card">
+        <div class="card-content">
+            <h3 class="card-title">🎮 Interactive Experience!</h3>
+            <p class="card-message">Move your cursor around to see the magical pixel trail effect! ✨</p>
+            <button class="card-close" onclick="closeCursorEffectCard()">Awesome!</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hello, I'm Andrew L</span>
+                </h1>
+
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">About Me</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="profile-card">
+                    <div class="profile-spotlight-overlay"></div>
+                    <div class="profile-image">
+                        <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg" alt="Andrew L Profile" class="profile-avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>I don't really know what to write here because this is just a demo website</h3>
+                    <p>
+                        But I want to make full use of the space so let me introduce myself
+                    </p>
+                    <p>
+                        ✨ I'm a Computer Science student who likes turning code into playful interaction and weird ideas into real websites
+                    </p>
+                    <p>
+                        Sometimes for fun sometimes for clients but always with way too much attention to detail. Also I really like math and physics and if you ever need a tutor I'd be weirdly excited to help
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">6,000+</span>
+                            <span class="stat-label">Days Lived</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">80,000+</span>
+                            <span class="stat-label">People Met</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">23,000+</span>
+                            <span class="stat-label">Days Left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-card">
+                        <div class="about-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Tools and techniques I use</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">✨ Digital Art & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Adobe Photoshop</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>Adobe Illustrator</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-film"></i>
+                            <span>Adobe After Effects</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Blender 3D</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Procreate</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">🚀 Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="emoji-animation">💌</span>
+                    Get In Touch
+                    <span class="emoji-animation">✨</span>
+                </h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+                <p style="color: #ff6b6b; font-size: 14px; margin-top: 10px; font-style: italic;">⚠️ This is a demo website - everything is fake! 💫</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>andrew.liu@creative.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (415) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
