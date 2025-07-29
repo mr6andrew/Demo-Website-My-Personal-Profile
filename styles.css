@@ -1199,12 +1199,12 @@ section {
     }
 
     .hero-content {
-        grid-template-columns: 1fr;
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: unset !important;
         text-align: center;
         gap: 30px;
         min-height: auto;
-        display: flex;
-        flex-direction: column;
     }
     
     .hero-image {
@@ -1295,6 +1295,9 @@ section {
 
 @media (max-width: 480px) {
     .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: unset !important;
         gap: 20px;
     }
     
