@@ -1203,28 +1203,25 @@ section {
         text-align: center;
         gap: 30px;
         min-height: auto;
-        grid-template-areas: 
-            "profile"
-            "text"
-            "buttons";
+        display: flex;
+        flex-direction: column;
     }
     
     .hero-image {
-        grid-area: profile;
         order: 1;
+        margin-bottom: 20px;
     }
     
     .hero-text {
-        grid-area: text;
         order: 2;
     }
     
     .hero-buttons {
-        grid-area: buttons;
         order: 3;
         justify-content: center;
         flex-direction: column;
         gap: 15px;
+        margin-top: 20px;
     }
 
     .hero-title {
@@ -1297,6 +1294,24 @@ section {
 }
 
 @media (max-width: 480px) {
+    .hero-content {
+        gap: 20px;
+    }
+    
+    .hero-image {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    
+    .hero-text {
+        order: 2;
+    }
+    
+    .hero-buttons {
+        order: 3;
+        margin-top: 15px;
+    }
+    
     .hero-title {
         font-size: 2rem;
         min-height: auto;
