@@ -1140,24 +1140,35 @@ section {
     .typing-text {
         min-width: auto;
         width: auto;
+        max-width: 100%;
     }
 
     .hero-subtitle {
         min-width: auto;
         width: auto;
+        max-width: 100%;
     }
 
     .role-text {
         min-width: auto;
         width: auto;
+        max-width: 100%;
     }
 
     .hero-content {
         min-height: auto;
+        gap: 30px;
     }
 
     .hero-title {
         min-height: auto;
+        font-size: 2.2rem;
+    }
+    
+    .profile-card {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
     }
 }
 
@@ -1202,25 +1213,32 @@ section {
     .typing-text {
         min-width: auto;
         width: auto;
+        max-width: 100%;
+        font-size: 1.8rem;
     }
 
     .hero-subtitle {
         min-width: auto;
         width: auto;
+        max-width: 100%;
     }
 
     .role-text {
         min-width: auto;
         width: auto;
+        max-width: 100%;
     }
 
     .profile-card {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
     }
 
     .hero-buttons {
         justify-content: center;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .about-content {
